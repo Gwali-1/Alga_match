@@ -131,10 +131,8 @@ class patternAlga():
                   
 test = patternAlga()
 
-
-
 ##test case 
-foo = " the man is the one we want "
+foo = " the man is the one we want !"
 bar = " one we"
 print(test.is_phrase_in(foo,bar))  #Returns 1 , and prints  Found and the location of word or phrase
 
