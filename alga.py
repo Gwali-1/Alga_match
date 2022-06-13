@@ -92,7 +92,6 @@ class patternAlga():
         temp2_spaces = list()
         string_len = len(temp1)
         phrase_len = len(temp2)
-        # print(phrase_len)
         count = 0
         for ele in range(string_len - 1):
             if temp1[ele] == " ":
@@ -112,7 +111,6 @@ class patternAlga():
         phrase_len = phrase_len - count
 
         check = False
-        # print(phrase_len)
         for i in range(string_len):
             start = i
             end = start + phrase_len
@@ -121,7 +119,6 @@ class patternAlga():
                 temp1[start:end] = "-" * len(temp1[start:end]) 
                 check =  "True"
                 break
-        # print(check)
         if check == "True":
             print("Found!")
             for i in temp1_spaces:
@@ -140,50 +137,4 @@ test = patternAlga()
 foo = " the man is the one we want "
 bar = " one we"
 print(test.is_phrase_in(foo,bar))  #Returns 1 , and prints  Found and the location of word or phrase
-
-
-
-
-
-
-
- 
-# data = "they will never take us angela"
-# trans = [x for x in data]
-# foo = []
-# print(len(trans) - 1)
-# print(trans)
-
-# count = 0
-
-# for i in range(len(trans) -1):
-#     if trans[i] == " ":
-#         foo.append(i)
-# for i in foo:
-#      trans.remove(trans[i - count])
-#      count+=1
-    
-# print(trans)
-# print(len(trans))
-
-# word = "angela"
-# bar = [x for x in word]
-# sub = len(word)
-# subst = len(trans)
-
-# for i in range(0,subst,1):
-#     count = 0
-#     while True:
-#         start =  i
-#         end = start + sub
-#         print(trans[start:end])
-#         if (trans[start:end]) == bar:
-#             print("match found")
-#             break
-#         else:
-#              break
-
-
-# print("not match")
-
 
